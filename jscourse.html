@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS course</title>
+  </head>
+  <body>
+    <div>
+      <h2>I am learning Javascript</h2>
+      <button id="click-btn">Click me</button>
+    </div>
+
+    <div>
+        <h4>On  and Off Light project</h4>
+        <img id="show-light" src="bob-off.jpg" height="400" width="400" alt="this is electric on and off project" />
+        <div>
+            <button id="btn-on">On</button>
+            <button id="btn-off">Off</button>
+        </div>
+
+        <div id="html-doc">
+            <h1 class="h1">This is h1</h1>
+
+
+            <button id="btn">click to change color</button>
+           
+        </div>
+
+        <div id="create-element">
+
+        </div>
+    </div>
+
+    <script>
+
+        let showLight = document.getElementById("show-light")
+        let btnOn = document.getElementById("btn-on")
+        let btnOff = document.getElementById("btn-off")
+
+
+        function turnOnLight (){
+            showLight.src = "bob-on.jpg"  
+        }
+        function turnOffLight (){
+            showLight.src = "bob-off.jpg"  
+        }
+
+        btnOff.addEventListener('click', turnOffLight)
+        btnOn.addEventListener('click', turnOnLight)
+
+
+
+
+
+
+
+
+      // let firstVariable = "This is js course"
+
+      // console.log(firstVariable);
+
+      // //variable is what we use to store data in javascript
+
+      // var thisIsVariable = "this is variable"
+
+      // let secondVariable = "Another variable"
+
+      // const thirdVariable = 4
+
+      // const fourthVariable = true
+
+      // console.log(fourthVariable)
+
+    //   const btn = document.getElementById("click-btn")
+
+    //   btn.addEventListener('click', MyFuntion2)
+
+    //   function MyFuntion2() {
+    //     console.log("btn");
+    //     // return x * y;
+    //   }
+    //   let result = MyFuntion2(2, 4);
+    </script>
+
+    <script src="jscourse.js"></script>
+  </body>
+</html>
