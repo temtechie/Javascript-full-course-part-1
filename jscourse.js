@@ -316,33 +316,157 @@
 //     btn.style.background = "red"
 // })
 
-const createElement = document.getElementById("create-element")
-const newElement = document.createElement("p")
+// const createElement = document.getElementById("create-element")
+// const newElement = document.createElement("p")
 
-newElement.innerHTML = "newly created element p tag"
-newElement.style.color = "blue"
+// newElement.innerHTML = "newly created element p tag"
+// newElement.style.color = "blue"
 
-createElement.removeChild(newElement)
+// createElement.removeChild(newElement)
 
 
 
-function getRandomColor() {
-    var letters = "0123456789ABCDEF";
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
+// function getRandomColor() {
+//     var letters = "0123456789ABCDEF";
+//     var color = "#";
+//     for (var i = 0; i < 6; i++) {
+//       color += letters[Math.floor(Math.random() * 16)];
+//     }
+//     return color;
+//   }
 
-  // Update the thumbnail image with a random color
-  function updateThumbnail() {
-    var thumbnailImage = document.getElementById("thumbnailImage");
-    thumbnailImage.style.backgroundColor = getRandomColor();
-  }
+//   // Update the thumbnail image with a random color
+//   function updateThumbnail() {
+//     var thumbnailImage = document.getElementById("thumbnailImage");
+//     thumbnailImage.style.backgroundColor = getRandomColor();
+//   }
 
-  // Initial update on page load
-  updateThumbnail();
+//   // Initial update on page load
+//   updateThumbnail();
+
+// const myPromise = new Promise((resolve, reject) => {
+//   let myrandomNumber = Math.random()
+
+//   if (myrandomNumber > 0.4) {
+//     resolve(myrandomNumber)
+//   } else (
+//     reject("Promise rejected!")
+//   )
+// })
+
+// myPromise.then((res) =>{
+//   console.log(res);
+// }).catch((err) => {
+//   console.log(err);
+// })
+
+// async function getPromise(){
+//   const result = await myPromise
+//   console.log(result);
+// }
+
+// const getPromise = async (a, b) => {
+
+//   // try {
+//   //   const result = await myPromise
+//   //   console.log(result);
+
+//   // } catch (error) {
+//   //   console.log(error);
+//   // }
+
+//   return a * b
+
+
+// }
+
+// getPromise(2, 4).then((res) => {
+//   console.log(res);
+// }).catch((err) => {
+// console.log(err);
+// })
+
+// Error in js
+
+// syntax error
+
+// let x = 4
+// console.log(4
+
+// Reference Error 
+
+// function xyz(){
+//   const x = 7
+// }
+
+// console.log(x)
+
+// type conversion 
+
+//implicit conversion
+
+// let x = 5
+
+// let y = "2"
+
+// let z = x * y
+// console.log(z);
+
+//explicit conversion
+
+
+// let x = 5
+
+// let y = "2"
+
+// let z = Number(y)
+// console.log(typeof z);
+
+// import myFuncExport from './exportcode.js'
+// // import { myName , cal} from './exportcode.js'
+
+// let result = myFuncExport.myName('Temple')
+// let calResult = myFuncExport.cal(2, 4)
+
+// console.log(calResult);
+
+//JSON
+
+// '{
+//   "name": "Temple"
+// }'
+
+// let myJSON = {name: "Temple", occupation: "developer"}
+
+// let myArr = ["Temple", "Developer"]
+
+// const convertedJSON = JSON.stringify(myJSON)
+// const convertedArr = JSON.stringify(myArr)
+
+// console.log(convertedJSON);
+// console.log(convertedArr);
+
+// const parsedJSON = JSON.parse(convertedJSON)
+
+// console.log(parsedJSON);
+
+//web api
+
+// local storage
+
+const logoutBtn = document.getElementById("logout")
+
+let obj = { name: "Ndukwu", occupation: "developer" }
+
+let localStorageData = localStorage.setItem("myObj", JSON.stringify(obj))
+let getLocalStorageData = localStorage.getItem("myObj")
+
+
+
+
+logoutBtn.addEventListener('click', function () {
+  localStorage.removeItem("myObj")
+})
 
 
 
